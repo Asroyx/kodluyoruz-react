@@ -1,5 +1,5 @@
-const hello = () => console.log("Hello");
+const hello = (name) => console.log("Hello " + name);
 
 const addition = (a, b) => a + b;
 
-export default addition;
+export { hello, addition };
