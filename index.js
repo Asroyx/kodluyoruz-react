@@ -1,5 +1,3 @@
-import slugify from "slugify";
+import addition from "./my-module.js";
 
-const title = slugify("some string lorem ipsum", "*");
-
-console.log(title);
+console.log(addition(2, 4));
