@@ -4,8 +4,8 @@
 //   console.log("Hello, I will work every second");
 // }, 1000);
 
-const sayHello = () => {
-  console.log("Hello");
+const sayHello = (cb) => {
+  cb();
 };
 
-sayHello();
+sayHello(() => console.log("Hello"));
