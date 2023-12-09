@@ -19,5 +19,11 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
     fetch("https://jsonplaceholder.typicode.com/posts/1")
       .then((data) => data.json())
-      .then((posts) => console.log("POSTS LOADED", posts));
+      .then((posts) => {
+        console.log("POSTS LOADED", posts);
+
+        fetch("https://jsonplaceholder.typicode.com/posts/2")
+          .then((data) => data.json())
+          .then((posts2) => console.log("POSTS 2 LOADED", posts));
+      });
   });
