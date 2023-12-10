@@ -29,8 +29,10 @@ import fetch from "node-fetch";
 //   });
 
 async function getData() {
-  const data = await fetch("https://jsonplaceholder.typicode.com/users");
-  console.log(data);
+  const users = await (
+    await fetch("https://jsonplaceholder.typicode.com/users")
+  ).json();
+  console.log("users", users);
 }
 
 getData();
