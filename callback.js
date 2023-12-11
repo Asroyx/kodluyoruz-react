@@ -46,6 +46,18 @@ import fetch from "node-fetch";
 
 // getData();
 
-(() => {
-  console.log("Hello");
+(async () => {
+  const users = await (
+    await fetch("https://jsonplaceholder.typicode.com/users")
+  ).json();
+  const post1 = await (
+    await fetch("https://jsonplaceholder.typicode.com/posts/1")
+  ).json();
+  const post2 = await (
+    await fetch("https://jsonplaceholder.typicode.com/posts/2")
+  ).json();
+
+  console.log("users", users);
+  console.log("post1", post1);
+  console.log("post2", post2);
 })();
