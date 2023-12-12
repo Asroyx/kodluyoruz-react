@@ -64,9 +64,13 @@ import axios from "axios";
 // })();
 
 const getComments = () => {
-  return new Promise(() => {
+  return new Promise((resolve, reject) => {
     console.log("comments");
+
+    resolve();
   });
 };
 
-getComments().then(() => console.log("finished"));
+getComments()
+  .then(() => console.log("finished"))
+  .catch((e) => console.log(e));
