@@ -48,15 +48,9 @@ import axios from "axios";
 // getData();
 
 (async () => {
-  const users = await (
-    await fetch("https://jsonplaceholder.typicode.com/users")
-  ).json();
-  const post1 = await (
-    await fetch("https://jsonplaceholder.typicode.com/posts/1")
-  ).json();
-  const post2 = await (
-    await fetch("https://jsonplaceholder.typicode.com/posts/2")
-  ).json();
+  const users = await axios("https://jsonplaceholder.typicode.com/users");
+  const post1 = await axios("https://jsonplaceholder.typicode.com/posts/1");
+  const post2 = await axios("https://jsonplaceholder.typicode.com/posts/2");
 
   console.log("users", users);
   console.log("post1", post1);
