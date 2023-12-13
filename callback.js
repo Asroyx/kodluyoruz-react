@@ -63,12 +63,16 @@ import axios from "axios";
 //   console.log("post2", post2);
 // })();
 
-const getComments = () => {
+const getComments = (number) => {
   return new Promise((resolve, reject) => {
-    resolve("Comments");
+    if (number === 1) {
+      resolve({ text: "hello" });
+    }
+
+    reject("Error!");
   });
 };
 
-getComments()
+getComments(2)
   .then((data) => console.log(data))
   .catch((e) => console.log(e));
