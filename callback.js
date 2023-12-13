@@ -65,12 +65,10 @@ import axios from "axios";
 
 const getComments = () => {
   return new Promise((resolve, reject) => {
-    console.log("comments");
-
-    resolve();
+    resolve("Comments");
   });
 };
 
 getComments()
-  .then(() => console.log("finished"))
+  .then((data) => console.log(data))
   .catch((e) => console.log(e));
