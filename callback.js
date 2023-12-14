@@ -82,9 +82,13 @@ const getPost = (post_id) => {
 };
 
 (async () => {
-  const users = await getUsers();
+  try {
+    const users = await getUsers();
 
-  const post = await getPost(1);
+    const post = await getPost(1);
 
-  console.log(users, post);
+    console.log(users, post);
+  } catch (e) {
+    console.log(e);
+  }
 })();
