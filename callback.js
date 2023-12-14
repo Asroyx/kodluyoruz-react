@@ -81,10 +81,12 @@ const getPost = (post_id) => {
   });
 };
 
-getUsers()
-  .then((data) => console.log(data))
-  .catch((e) => console.log(e));
+(async () => {
+  await getUsers()
+    .then((data) => console.log(data))
+    .catch((e) => console.log(e));
 
-getPost(1)
-  .then((data) => console.log(data))
-  .catch((e) => console.log(e));
+  await getPost(1)
+    .then((data) => console.log(data))
+    .catch((e) => console.log(e));
+})();
