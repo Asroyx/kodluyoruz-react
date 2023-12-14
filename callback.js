@@ -71,6 +71,20 @@ const getUsers = () => {
   });
 };
 
+const getPost = (post_id) => {
+  return new Promise(async (resolve, reject) => {
+    const { data } = await axios(
+      "https://jsonplaceholder.typicode.com/posts/" + post_id
+    );
+
+    resolve(data);
+  });
+};
+
 getUsers()
+  .then((data) => console.log(data))
+  .catch((e) => console.log(e));
+
+getPost(1)
   .then((data) => console.log(data))
   .catch((e) => console.log(e));
