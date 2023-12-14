@@ -78,19 +78,23 @@ const getPost = (post_id) => {
       "https://jsonplaceholder.typicode.com/posts/" + post_id
     );
 
-    // resolve(data);
-    reject("Something else went wrong");
+    resolve(data);
+    // reject("Something else went wrong");
   });
 };
 
-(async () => {
-  try {
-    const users = await getUsers();
+// (async () => {
+//   try {
+//     const users = await getUsers();
 
-    const post = await getPost(1);
+//     const post = await getPost(1);
 
-    console.log(users, post);
-  } catch (e) {
-    console.log(e);
-  }
-})();
+//     console.log(users, post);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// })();
+
+Promise.all([getUsers(), getPost(1)])
+  .then(console.log)
+  .catch(console.log);
