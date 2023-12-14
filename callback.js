@@ -63,7 +63,7 @@ import axios from "axios";
 //   console.log("post2", post2);
 // })();
 
-const getComments = (number) => {
+const getUsers = () => {
   return new Promise(async (resolve, reject) => {
     const { data } = await axios("https://jsonplaceholder.typicode.com/users");
 
@@ -71,6 +71,6 @@ const getComments = (number) => {
   });
 };
 
-getComments(2)
+getUsers()
   .then((data) => console.log(data))
   .catch((e) => console.log(e));
