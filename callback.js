@@ -68,6 +68,7 @@ const getUsers = () => {
     const { data } = await axios("https://jsonplaceholder.typicode.com/users");
 
     resolve(data);
+    // reject("Something went wrong");
   });
 };
 
@@ -77,7 +78,8 @@ const getPost = (post_id) => {
       "https://jsonplaceholder.typicode.com/posts/" + post_id
     );
 
-    resolve(data);
+    // resolve(data);
+    reject("Something else went wrong");
   });
 };
 
