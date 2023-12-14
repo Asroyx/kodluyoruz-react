@@ -64,12 +64,10 @@ import axios from "axios";
 // })();
 
 const getComments = (number) => {
-  return new Promise((resolve, reject) => {
-    if (number === 1) {
-      resolve({ text: "hello" });
-    }
+  return new Promise(async (resolve, reject) => {
+    const { data } = await axios("https://jsonplaceholder.typicode.com/users");
 
-    reject("Error!");
+    resolve(data);
   });
 };
 
