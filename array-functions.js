@@ -7,6 +7,6 @@ const users = ["Mehmet", "Ahmet", "Murat"];
 // console.log(users);
 
 // map
-for (let i = 0; i < users.length; i++) {
-  console.log(users[i]);
-}
+users.map((item) => {
+  console.log(item);
+});
