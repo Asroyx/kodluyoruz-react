@@ -1,5 +1,5 @@
 const users = ["Mehmet", "Ahmet", "Murat"];
 
-const newArray = users.push("Ayşe");
+users.push("Ayşe");
 
-console.log(newArray);
+console.log(users);
