@@ -1,6 +1,12 @@
 const users = ["Mehmet", "Ahmet", "Murat"];
 
-users.push("Ayşe");
-users.push("Fatma");
+// push
+// users.push("Ayşe");
+// users.push("Fatma");
 
-console.log(users);
+// console.log(users);
+
+// map
+for (let i = 0; i < users.length; i++) {
+  console.log(users[i]);
+}
