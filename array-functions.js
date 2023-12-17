@@ -1,4 +1,4 @@
-const users = ["Mehmet", "Ahmet", "Murat"];
+const users = [{ name: "Mehnet" }, { name: "Murat" }, { name: "Sevilay" }];
 
 // push
 // users.push("Ayşe");
