@@ -8,5 +8,5 @@ const users = [{ name: "Mehnet" }, { name: "Murat" }, { name: "Sevilay" }];
 
 // map
 users.map((item) => {
-  console.log(item);
+  console.log(item.name);
 });
