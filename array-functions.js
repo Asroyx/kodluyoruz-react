@@ -1,7 +1,7 @@
 import { user } from "./my-module";
 
 const users = [
-  { name: "Mehnet", age: 18 },
+  { name: "Mehnet", age: 30 },
   { name: "Murat", age: 29 },
   { name: "Sevilay", age: 20 },
 ];
