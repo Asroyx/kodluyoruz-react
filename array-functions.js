@@ -18,5 +18,11 @@ const users = [
 // });
 
 // find
-const result = users.find((item) => item.name === "Mehmet" && item.age > 20);
-console.log(result);
+// const result = users.find((item) => item.name === "Mehmet" && item.age > 20);
+// console.log(result);
+
+// filter
+const filtered = users.filter(
+  ({ name, age }) => item.name === "Mehmet" && item.age < 20
+);
+console.log(filtered);
