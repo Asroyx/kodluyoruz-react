@@ -22,7 +22,5 @@ const users = [
 // console.log(result);
 
 // filter
-const filtered = users.filter(
-  ({ name, age }) => item.name === "Mehmet" && item.age < 20
-);
+const filtered = users.filter(({ name, age }) => name === "Mehmet" && age < 20);
 console.log(filtered);
