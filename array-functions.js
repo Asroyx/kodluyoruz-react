@@ -26,5 +26,9 @@ const users = [
 // console.log(filtered);
 
 // some
-const some = users.some((item) => item.age === 11);
-console.log(some);
+// const some = users.some((item) => item.age === 11);
+// console.log(some);
+
+// every
+const every = users.every((item) => item.age > 5);
+console.log(every);
