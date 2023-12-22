@@ -35,3 +35,5 @@ const users = [
 
 // includes
 const fruits = ["apple", "pear", "banana"];
+const isIncluded = meyveler.includes("orange");
+console.log(isIncluded);
