@@ -30,5 +30,5 @@ const users = [
 // console.log(some);
 
 // every
-const every = users.every((item) => item.age > 5);
+const every = users.every((item) => item.age > 20);
 console.log(every);
