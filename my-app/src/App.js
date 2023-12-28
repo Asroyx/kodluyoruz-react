@@ -4,6 +4,7 @@ import Header from "./components/Header";
 
 const name = "Asil";
 const surname = "Ayazoglu";
+const isLoggedIn = true;
 
 function App() {
   return (
