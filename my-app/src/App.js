@@ -10,6 +10,8 @@ function App() {
   return (
     <>
       <h1>{isLoggedIn && `My name is ${name} and my surname is ${surname}`}</h1>
+
+      {!isLoggedIn && `You are not logged in`}
     </>
   );
 }
