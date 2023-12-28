@@ -8,10 +8,7 @@ const surname = "Ayazoglu";
 function App() {
   return (
     <>
-      <h1>
-        {name}
-        {surname}
-      </h1>
+      <h1>{`My name is ${name} and my surname is ${surname}`}</h1>
     </>
   );
 }
