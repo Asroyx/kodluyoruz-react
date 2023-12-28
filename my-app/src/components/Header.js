@@ -1,5 +1,5 @@
 function Header() {
-  return <div>Hello I am the Header Component</div>;
+  return <p>Hello I am the Header Component</p>;
 }
 
 export default Header;
