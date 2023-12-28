@@ -11,6 +11,11 @@ function App() {
         odio sequi soluta commodi velit hic delectus molestiae ducimus quidem
         voluptate veniam, sit numquam rem reprehenderit ullam minus amet.
       </p>
+
+      <label htmlFor="myinput">
+        Name
+        <input id="myinput" />
+      </label>
     </>
   );
 }
