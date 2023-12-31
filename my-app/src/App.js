@@ -9,7 +9,7 @@ const isLoggedIn = false; // change this to see information about name and surna
 function App() {
   return (
     <>
-      <User />
+      <User name="Asil" surname="Ayazoglu" />
     </>
   );
 }
