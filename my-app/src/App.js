@@ -10,11 +10,6 @@ function App() {
   return (
     <>
       <User />
-      <h1>
-        {isLoggedIn
-          ? `My name is ${name} and my surname is ${surname}`
-          : "You are not logged in"}
-      </h1>
     </>
   );
 }
