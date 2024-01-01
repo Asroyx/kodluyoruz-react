@@ -1,8 +1,7 @@
 function User(props) {
   return (
     <h1>
-      {props.name}
-      {props.surname}
+      {props.isLoggedIn ? `${props.name} ${props.surname}` : "Not logged in."}
     </h1>
   );
 }
