@@ -1,9 +1,5 @@
-function User(props) {
-  return (
-    <h1>
-      {props.isLoggedIn ? `${props.name} ${props.surname}` : "Not logged in."}
-    </h1>
-  );
+function User(name, surname, isLoggedIn) {
+  return <h1>{isLoggedIn ? `${name} ${surname}` : "Not logged in."}</h1>;
 }
 
 export default User;
