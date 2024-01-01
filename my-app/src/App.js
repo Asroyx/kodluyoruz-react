@@ -5,7 +5,7 @@ import User from "./components/User";
 function App() {
   return (
     <>
-      <User name="Asil" surname="Ayazoglu" isLoggedIn={false} />
+      <User name="Asil" surname="Ayazoglu" isLoggedIn={false} age={29} />
     </>
   );
 }
