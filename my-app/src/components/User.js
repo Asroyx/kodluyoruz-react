@@ -1,5 +1,11 @@
-function User(name, surname, isLoggedIn, age) {
-  return <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>;
+function User(name, surname, isLoggedIn, age, friends) {
+  return;
+  <>
+    <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>;{" "}
+    {friends.map((friend) => (
+      <div>{friend}</div>
+    ))}
+  </>;
 }
 
 export default User;
