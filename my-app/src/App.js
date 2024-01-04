@@ -2,6 +2,8 @@ import "./App.css";
 
 import User from "./components/User";
 
+const friends = ["Ahmet", "Tayfun", "Gökhan", "Ayşe", "Fatma"];
+
 function App() {
   return (
     <>
@@ -10,7 +12,7 @@ function App() {
         surname="Ayazoglu"
         isLoggedIn={false}
         age={29}
-        friends={["Ahmet", "Tayfun", "Gökhan", "Ayşe", "Fatma"]}
+        friends={friends}
       />
     </>
   );
