@@ -4,12 +4,15 @@ import User from "./components/User";
 
 const friends = [
   {
+    id: 1,
     name: "Ahmet",
   },
   {
+    id: 2,
     name: "Tayfun",
   },
   {
+    id: 3,
     name: "Gökhan",
   },
 ];
