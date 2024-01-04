@@ -2,7 +2,17 @@ import "./App.css";
 
 import User from "./components/User";
 
-const friends = ["Ahmet", "Tayfun", "Gökhan", "Ayşe", "Fatma"];
+const friends = [
+  {
+    name: "Ahmet",
+  },
+  {
+    name: "Tayfun",
+  },
+  {
+    name: "Gökhan",
+  },
+];
 
 function App() {
   return (
