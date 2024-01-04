@@ -1,4 +1,4 @@
-function User(name, surname, isLoggedIn, age, friends) {
+function User({ name, surname, isLoggedIn, age, friends }) {
   return (
     <>
       <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>;
