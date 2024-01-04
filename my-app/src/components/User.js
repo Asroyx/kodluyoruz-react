@@ -4,7 +4,7 @@ function User(name, surname, isLoggedIn, age, friends) {
     <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>;
     {friends.map((friend, index) => (
       <div key={index}>
-        {index}- {friend}
+        {index}- {friend.name}
       </div>
     ))}
   </>;
