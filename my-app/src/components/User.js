@@ -11,4 +11,8 @@ function User({ name, surname, isLoggedIn, age, friends }) {
   );
 }
 
+User.propTypes = {
+  name: PropTypes.string,
+};
+
 export default User;
