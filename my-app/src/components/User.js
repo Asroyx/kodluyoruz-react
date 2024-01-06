@@ -15,6 +15,7 @@ User.propTypes = {
   name: PropTypes.string,
   surname: PropTypes.string,
   isLoggedIn: PropTypes.bool,
+  age: PropTypes.number,
 };
 
 export default User;
