@@ -16,6 +16,7 @@ User.propTypes = {
   surname: PropTypes.string,
   isLoggedIn: PropTypes.bool,
   age: PropTypes.number,
+  friends: PropTypes.array,
 };
 
 export default User;
