@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <User
-        name="Asil"
+        name={24}
         surname="Ayazoglu"
         isLoggedIn={false}
         age={29}
