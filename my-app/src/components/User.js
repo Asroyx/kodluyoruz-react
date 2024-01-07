@@ -13,8 +13,8 @@ function User({ name, surname, isLoggedIn, age, friends }) {
 
 User.propTypes = {
   name: PropTypes.string.isRequired,
-  surname: PropTypes.string,
-  isLoggedIn: PropTypes.bool,
+  surname: PropTypes.string.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
   age: PropTypes.number,
   friends: PropTypes.array,
 };
