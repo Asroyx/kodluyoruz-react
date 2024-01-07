@@ -12,7 +12,7 @@ function User({ name, surname, isLoggedIn, age, friends }) {
 }
 
 User.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   surname: PropTypes.string,
   isLoggedIn: PropTypes.bool,
   age: PropTypes.number,
