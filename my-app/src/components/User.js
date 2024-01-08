@@ -14,7 +14,7 @@ User.propTypes = {
   name: PropTypes.string.isRequired,
   surname: PropTypes.string.isRequired,
   isLoggedIn: PropTypes.bool.isRequired,
-  age: PropTypes.number.isRequired,
+  age: PropTypes.oneOfType([propTypes.number, propTypes.string]),
   friends: PropTypes.array,
 };
 
