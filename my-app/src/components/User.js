@@ -6,6 +6,7 @@ function User({ name, surname, isLoggedIn, age, friends, address }) {
       <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>
 
       {address.title}
+      {address.zip}
 
       {friends &&
         friends.map((friend) => <div key={friend.id}>{friend.name}</div>)}
