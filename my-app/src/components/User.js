@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 
-function User({ name, surname, isLoggedIn, age, friends }) {
+function User({ name, surname, isLoggedIn, age, friends, address }) {
   return (
     <>
-      <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>;
+      <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>
+
+      {address.title}
+
       {friends &&
         friends.map((friend) => <div key={friend.id}>{friend.name}</div>)}
     </>
