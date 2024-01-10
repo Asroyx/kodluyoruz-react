@@ -1,9 +1,13 @@
 import PropTypes from "prop-types";
 
 function User({ name, surname, isLoggedIn, age, friends, address }) {
+  if (!isLoggedIn) {
+    return <div>Not logged in.</div>;
+  }
+
   return (
     <>
-      <h1>{isLoggedIn ? `${name} ${surname} ${age}` : "Not logged in."}</h1>
+      <h1>{`${name} ${surname} ${age}`}</h1>
 
       {address.title}
       {address.zip}
