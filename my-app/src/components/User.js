@@ -20,6 +20,10 @@ User.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
   age: PropTypes.oneOfType([propTypes.number, propTypes.string]).isRequired,
   friends: PropTypes.array,
+  address: propTypes.shape({
+    title: propTypes.string,
+    zip: propTypes.number,
+  }),
 };
 
 export default User;
