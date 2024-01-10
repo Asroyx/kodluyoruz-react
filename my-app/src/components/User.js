@@ -31,6 +31,7 @@ User.propTypes = {
 };
 
 User.defaultProps = {
+  name: "Anonymous",
   isLoggedIn: false,
 };
 
