@@ -26,4 +26,8 @@ User.propTypes = {
   }),
 };
 
+User.defaultProps = {
+  isLoggedIn: false,
+};
+
 export default User;
