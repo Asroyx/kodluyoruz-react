@@ -1,7 +1,10 @@
+// Importing the CSS file for styling
 import "./App.css";
 
+// Importing the User component from the specified path
 import User from "./components/User";
 
+// Array of friends data
 const friends = [
   {
     id: 1,
@@ -17,7 +20,9 @@ const friends = [
   },
 ];
 
+// Main App component
 function App() {
+  // Rendering the User component with some sample data
   return (
     <>
       <User
@@ -35,4 +40,5 @@ function App() {
   );
 }
 
+// Exporting the App component as the default export
 export default App;
